@@ -9,7 +9,7 @@ export default {
   name: "shopping",
   data() {
     return {
-        name:'朱秋艳嫁给了老李'
+        name:'11'
     };
   },
   methods: {

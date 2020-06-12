@@ -14,7 +14,7 @@ export default {
   methods: {
     show() {
       Toast({
-        message: "Register ",
+        message: "Register",
         position: "bottom",
         duration: 3000,
         iconClass: "glyphicon glyphicon-heart myheart"
