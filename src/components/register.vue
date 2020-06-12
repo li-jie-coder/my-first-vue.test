@@ -14,7 +14,7 @@ export default {
   methods: {
     show() {
       Toast({
-        message: "朱秋艳大傻逼 么么哒",
+        message: "Register ",
         position: "bottom",
         duration: 3000,
         iconClass: "glyphicon glyphicon-heart myheart"

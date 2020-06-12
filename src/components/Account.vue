@@ -6,7 +6,7 @@
     <router-view></router-view>
     <!-- 导航栏 -->
     <nav class="mui-bar mui-bar-tab">
-      <router-link to="/login" class="mui-tab-item mui-active" href="#tabbar">
+      <router-link to="/login" class="mui-tab-item" href="#tabbar">
         <span class="mui-icon mui-icon-home"></span>
         <span class="mui-tab-label">首页</span>
       </router-link>
