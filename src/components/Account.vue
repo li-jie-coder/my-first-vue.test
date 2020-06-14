@@ -1,9 +1,11 @@
 <template>
-  <div>
+  <div class="container">
     <!-- 头部 -->
     <mt-header fixed title="固定在顶部"></mt-header>
     <!-- 主内容 -->
-    <router-view></router-view>
+    <transition>
+      <router-view class="myview"></router-view>
+    </transition>
     <!-- 导航栏 -->
     <nav class="mui-bar mui-bar-tab">
       <router-link to="/login" class="mui-tab-item" href="#tabbar">
@@ -41,6 +43,28 @@ export default {
 
 <!-- scoped  实现原理是 给下面的每个类都添加了一个属性 data-xxx  并分别给他相应的css样式 -->
 <style scoped>
+.container {
+  overflow-x: hidden;
+  height: 600px;
+
+}
+
+.v-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.v-leave-to {
+  position: absolute;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.v-enter-active
+{
+  transition: all 0.4s ease;
+}
+
 h1,
 h2 {
   font-weight: normal;

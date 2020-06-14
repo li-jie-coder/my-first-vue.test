@@ -4,14 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'mint-ui/lib/style.css'//mint-ui默认css样式 
-import { Header } from 'mint-ui';
-
+import { Header,Button } from 'mint-ui';
+Vue.component(Button.name, Button)
 Vue.component(Header.name, Header);
 
 import 'bootstrap/dist/css/bootstrap.css'
 import './css/index.css'
+import '../lib/mui/dist/css/mui.css'
 
-import '../lib/mui/dist/css/mui.min.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
