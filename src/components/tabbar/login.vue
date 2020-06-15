@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="login">
     <h2>login组件</h2>
     <mt-button type="primary" @click="show" :disabled="flag">primary</mt-button>
   </div>
@@ -34,6 +34,9 @@ export default {
 </script>
 
 <style scoped>
+.login{
+  text-align: center;
+}
 h1,
 h2 {
   font-weight: normal;
