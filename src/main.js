@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'mint-ui/lib/style.css'//mint-ui默认css样式 
-import { Header,Button } from 'mint-ui';
+import { Header, Button } from 'mint-ui';
 Vue.component(Button.name, Button)
 Vue.component(Header.name, Header);
 
@@ -15,6 +15,16 @@ import './css/index.css'
 import '../lib/mui/dist/css/mui.css'
 
 Vue.config.productionTip = false
+
+Vue.filter("dataFormate", function (data) {
+  var dt = new Date();
+  var y = dt.getFullYear();
+  //只有字符串可以使用 padStart(字符串长度为2,不足的在前面填充 0) 开始
+  var m = (dt.getMonth()+1).toString().padStart(2, "0");
+  //padEnd(字符串长度，填充)
+  var d = dt.getDate().toString().padEnd(3, "!");
+  return `${y}-${m}-${d}`;
+});
 
 /* eslint-disable no-new */
 new Vue({
