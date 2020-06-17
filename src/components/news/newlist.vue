@@ -5,7 +5,7 @@
     </ul>-->
     <ul class="mui-table-view">
       <li class="mui-table-view-cell mui-media">
-        <router-link to="/home/newlist/1">
+        <router-link :to="'/home/newlist/'+1">
           <img
             class="mui-media-object mui-pull-left"
             src="https://img2020.cnblogs.com/blog/35695/202006/35695-20200612200054109-486254558.png"

@@ -45,8 +45,8 @@ export default {
 <style scoped>
 .container {
   overflow-x: hidden;
-  height: 600px;
   margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .v-enter {
@@ -60,8 +60,7 @@ export default {
   transform: translateX(-100%);
 }
 
-.v-enter-active
-{
+.v-enter-active {
   transition: all 0.4s ease;
 }
 

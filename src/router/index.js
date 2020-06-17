@@ -5,7 +5,7 @@ import shopping from '@/components/tabbar/shopping'
 import login from '@/components/tabbar/login'
 import register from '@/components/tabbar/register'
 import newlist from '../components/news/newlist'
-import newscontent from '../components/newscontent/newscontent'
+import newscontent from '../components/news/newscontent'
 Vue.use(Router)
 
 export default new Router({

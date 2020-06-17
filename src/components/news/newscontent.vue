@@ -3,18 +3,24 @@
     <h1>
       newsContent组件
       <br />
-      {{url}}
+      {{id}}
     </h1>
+
+    <comment :id="id"></comment>
   </div>
 </template>
 
 <script>
+import comment from "../comment/comment";
 export default {
   name: "newsContent",
   data() {
     return {
-      url: this.$route.path
+      id: this.$route.params.id
     };
+  },
+  components: {
+    comment
   }
 };
 </script>
