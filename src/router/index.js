@@ -6,6 +6,7 @@ import login from '@/components/tabbar/login'
 import register from '@/components/tabbar/register'
 import newlist from '../components/news/newlist'
 import newscontent from '../components/news/newscontent'
+import lazyload from '../components/news/lazyload'
 Vue.use(Router)
 
 export default new Router({
@@ -16,7 +17,9 @@ export default new Router({
     { path: '/login', component: login },
     { path: '/register', component: register },
     { path: '/home/newlist', component: newlist },
-    {path: '/home/newlist/:id', component: newscontent }
+    { path: '/home/newlist/:id', component: newscontent },
+    { path: '/home/newlist/:id/lazyload', component: lazyload }
+
   ],
   linkActiveClass: 'mui-active'//将mui的默认高亮类 替换成路由自动添加上的那个类 做到高亮功能
 })

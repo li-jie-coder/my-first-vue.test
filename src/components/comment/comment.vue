@@ -32,7 +32,10 @@
       </div>
       -->
     </div>
-
+    <router-link :to="'/home/newlist/'+this.id+'/lazyload'">
+      <mt-button type="primary" size="large" plain>懒加载图片</mt-button>
+    </router-link>
+    <br>
     <mt-button type="danger" size="large" plain>加载更多</mt-button>
   </div>
 </template>

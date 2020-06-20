@@ -8,7 +8,7 @@
         <router-link :to="'/home/newlist/'+1">
           <img
             class="mui-media-object mui-pull-left"
-            src="https://img2020.cnblogs.com/blog/35695/202006/35695-20200612200054109-486254558.png"
+            src="/static/image/1.jpg"
           />
           <div class="mui-media-body">
             幸福 {{newlist.a|dataFormate}}
@@ -20,7 +20,7 @@
         <router-link to="/home/newlist/2">
           <img
             class="mui-media-object mui-pull-left"
-            src="https://profile.csdnimg.cn/2/3/4/3_devmiao"
+            src="/static/image/2.jpg"
           />
           <div class="mui-media-body">
             木屋
@@ -32,7 +32,7 @@
         <router-link to="/home/newlist/3">
           <img
             class="mui-media-object mui-pull-left"
-            src="https://profile.csdnimg.cn/B/D/D/3_qq_35669619"
+            src="/static/image/3.jpg"
           />
           <div class="mui-media-body">
             CBD
